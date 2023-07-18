@@ -15,7 +15,12 @@ body {
 img {
     max-width: 100%;
 }
-
+.p-text {
+    color: #534C64;
+    font-weight: 400;
+    font-size: .9rem;
+    padding: 5px 0;
+}
 /* header styles start */
 
 /* nav section */
@@ -146,13 +151,11 @@ section {
     font-weight: 700;
     padding: 10px 0;
 }
-
-.p-text {
-    color: #534C64;
-    font-weight: 400;
-    font-size: .9rem;
-    padding: 5px 0;
+.sec-content span{
+    color:#FF42A5 ;
 }
+
+
 
 .sec-card {
     display: grid;
@@ -230,6 +233,18 @@ section {
     .banner {
         flex-direction: column-reverse;
     }
+    .sec-card {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .sec-content h2 {
+        font-size: 1.5rem;
+
+    }
+  .p-text{
+    font-size: .7rem    ;
+  }
 }
 
 /* tablet responsive */
@@ -276,5 +291,10 @@ section {
         flex-direction: column;
         gap: 10px;
         justify-content: flex-start;
+    }
+    .sec-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
