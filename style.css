@@ -276,21 +276,25 @@ main {
 /* footer section */
 footer {
     background-color: #0B0223;
-    padding: 60px 0;
+    padding: 60px 300px;
     color: white;
     text-align: center;
+
 }
 
 .footer-icon {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 10px;
 }
- h1{
-    font-size: 2rem;
+
+h1 {
+    font-size: 2.2rem;
     font-weight: 700;
 }
-.footer-icon span{
+
+.footer-icon span {
     color: #FF42A5;
 }
 
@@ -298,11 +302,46 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 20px;
+    padding: 0 40px;
 }
 
 .footer-text h6 {
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: 600;
+}
+
+.footer-media {
+    margin-top: 30px;
+
+}
+
+.footer-media a {
+    padding: 0 20px;
+    
+}
+.footer-media img{
+    width: 1.8rem;
+}
+
+.footer-policy {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 100px;
+}
+
+.footer-policy p {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: .8rem;
+    font-weight: 500;
+
+}
+
+.footer-last {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: .7rem;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 
@@ -378,7 +417,34 @@ footer {
     .img-card h6 {
         font-size: .5rem;
     }
-
+    footer{
+        padding: 20px ;
+        text-align: center;
+    }
+    .footer-text {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 0px;
+        margin-top: 20px;
+        padding: 0 40px;
+       
+    }
+    .footer-text h6{
+        font-size: .9rem;
+    }
+    .footer-media{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0 70px;
+        gap: 15px 0;
+    }
+    .footer-media img{
+    width: 1.3rem;
+    }
+    .footer-policy{
+      gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 40px;
+    }
 }
 
 /* tablet responsive */
@@ -456,5 +522,32 @@ footer {
     .image-button {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
+    }
+    
+    footer{
+        padding: 50px ;
+        text-align: center;
+    }
+    .footer-text {
+   
+        margin-top: 20px;
+        padding: 0 40px;
+       
+    }
+    .footer-text h6{
+        font-size: .9rem;
+    }
+    .footer-media{
+      
+        padding: 0 70px;
+        gap: 15px 0;
+    }
+    .footer-media img{
+    width: 1.3rem;
+    }
+    .footer-policy{
+      gap: 10px;
+       
+        padding: 0 40px;
     }
 }
