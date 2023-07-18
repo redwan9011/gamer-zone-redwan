@@ -55,7 +55,8 @@ nav {
     align-items: center;
     gap: 1.5rem;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 15px;
 }
@@ -88,7 +89,7 @@ nav {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
-  gap: 100px;
+    gap: 100px;
     align-items: center;
 }
 
@@ -114,7 +115,7 @@ nav {
 
 }
 
-.btn{
+.btn {
     margin-top: 20px;
     border: none;
     padding: 12px 25px;
@@ -122,7 +123,8 @@ nav {
     color: white;
     border-radius: 30px;
 }
-.btn-2{
+
+.btn-2 {
     border: none;
     padding: 12px 25px;
     background-color: #4EC5F7;
@@ -131,72 +133,148 @@ nav {
     margin-left: 10px;
 }
 
+/*  section part styles*/
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sec-content h2 {
+    color: #0B0223;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.p-text {
+    color: #534C64;
+    font-weight: 400;
+    font-size: .9rem;
+    padding: 5px 0;
+}
+
+.sec-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.sec-card img {
+    border-radius: 10px;
+}
+
+.card{
+    position: relative;
+}
+.watch{
+    background-color: rgba(12, 12, 12 , .8);
+    color: #FF42A5;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    border-radius: 10px;
+   
+}
+.watch-content h5{
+    margin-top: 7px;
+   
+}
+.card:hover .watch{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
 /* responsive styles */
 /* mobile responsive */
 @media screen and (max-width:576px) {
-    .pad{
+    .pad {
         padding-left: 20px;
         padding-right: 20px;
 
     }
-        nav{
-            flex-direction: column;
-           
-        }
-        .nav-icon{
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .nav-menu{
-            flex-direction: column;
-            gap: 15px;
-        }
-        .menu{
-            flex-direction: column;
-        }
-        .banner{
-            flex-direction: column-reverse;
-        }
-}
 
-/* tablet responsive */
-@media screen and (min-width:576px ) and (max-width: 960px) {
-    .pad{
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    nav{
+    nav {
         flex-direction: column;
-       
+
     }
-    .nav-icon{
+
+    .nav-icon {
         justify-content: center;
         margin-bottom: 15px;
     }
-    .nav-menu{
+
+    .nav-menu {
         flex-direction: column;
         gap: 15px;
     }
-    .banner{
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+}
+
+/* tablet responsive */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    .pad {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    .nav-icon {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner {
         gap: 30px;
     }
-    
-.banenr-content h2 {
-    font-size: 1.2rem;
-}
 
-.banenr-content h1 {
-    font-size: 2.5rem;
-}
+    .banenr-content h2 {
+        font-size: 1.2rem;
+    }
 
-.banenr-content p {
-    font-size: .7rem;
+    .banenr-content h1 {
+        font-size: 2.5rem;
+    }
 
-}
-.button{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: flex-start;
-}
+    .banenr-content p {
+        font-size: .7rem;
+
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+    }
 }
