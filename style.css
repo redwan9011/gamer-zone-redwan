@@ -101,7 +101,6 @@ nav {
 }
 
 
-
 .banenr-content h2 {
     color: #0B0223;
     font-size: 2rem;
@@ -246,10 +245,12 @@ main {
 .image-button {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+     grid-template-columns: repeat(5, 1fr); 
+   
     justify-items: center;
     gap: 10px;
 }
+
 
 .img-card {
     display: flex;
@@ -258,7 +259,10 @@ main {
     margin: auto;
     padding: 10px;
     border: 1px solid white;
-
+  
+}
+.margin{
+    margin-right: -85px;
 }
 
 .img-card:hover {
@@ -413,6 +417,9 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
+    .margin{
+        margin-right: 0px;
+    }
 
     .img-card h6 {
         font-size: .5rem;
@@ -523,7 +530,9 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
-    
+    .margin{
+        margin-right: 0px;
+    }
     footer{
         padding: 50px ;
         text-align: center;
